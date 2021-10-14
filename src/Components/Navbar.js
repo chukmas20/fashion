@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import Log from "../images/logo.jpg";
+import Toggle from "./Toggle";
 
 
 const Container = styled.div`
  height:50px;
-`
+`;
 const Wrapper  = styled.div`
 padding: 10px 20px;
 display: flex;
@@ -19,13 +20,23 @@ const Left = styled.div`
 `
 const Image = styled.img`
  font-weight:bold;
- height: 80px;
+ height: 40px;
  font-weight: bold;
  margin-left: 50px;
-`
+ border-radius: 15px;
+ left: 10px;
+ @media only screen and (max-width: 480px){
+  margin-left: 10px;
+}
+`;
 const Menu = styled.ul`
   display:flex;
   list-style:none;
+  cursor: pointer;
+
+  @media only screen and (max-width: 480px){
+    display:none;
+  }
 `;
 const MenuItem = styled.li`
   margin-right: 30px;
@@ -52,13 +63,12 @@ const Navbar = () => {
                  <Image src ={Log}/>
                  <Menu>
                      <MenuItem>Home</MenuItem>
-                     <MenuItem>Features</MenuItem>
-                     <MenuItem>Services</MenuItem>
+                     <MenuItem>About</MenuItem>
+                     <MenuItem>Designs</MenuItem>
                      <MenuItem>Pricing</MenuItem>
                      <MenuItem>Contact</MenuItem>
                  </Menu>
                  </Left>
-                 <Button>Join Today</Button>
              </Wrapper>
          </Container>
     )

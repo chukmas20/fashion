@@ -2,7 +2,7 @@ import styled from "styled-components";
 const Square = styled.div`
   width: 60px;
   height:60px;
-  background-color: blue;
+  background-color: purple;
   opacity: 0.7;
   position: absolute;
   top: -60px;
@@ -21,7 +21,7 @@ const Circle = styled.div`
   width: 100px;
   height:100px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: blue;
   position: absolute;
   top: 200px;
   left: -100px;
@@ -38,7 +38,7 @@ const Circle = styled.div`
 const Rect = styled.div`
   width: 50px;
   height:100px;
-  background-color: green;
+  background-color: pink;
   opacity: 0.5;
   position: absolute;
   top: 400px;

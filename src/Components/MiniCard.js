@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import  Search from "../images/search.png";
+import Fashion from "../images/fashion3.jpg";
 
 const  Container = styled.div`
    width: 100px;
-   padding: 20px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -15,20 +15,21 @@ const  Container = styled.div`
 `;
 
 const Image = styled.img`
-    width: 20px;
+    width: 80px;
 `;
 
 const Text = styled.span`
   margin-top: 10px;
   text-align: center;
+  @media only screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 const MiniCard = () => {
     return (
          <Container>
-              <Image src ={Search} />
-              <Text>
-                  Lorem here you go again
-              </Text>
+              <Image src ={Fashion} />
+              
          </Container>
     )
 }

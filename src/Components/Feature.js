@@ -4,10 +4,17 @@ import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
    display: flex;
+   @media only screen and (max-width: 480px){
+      flex-direction: column;
+      padding: 10px;
+    }
 `;
 
 const Left = styled.div`
    width:50%;
+   @media only screen and (max-width: 480px){
+      padding : 30px 20px;
+    }
 `;
 
 const Image = styled.img`
@@ -19,6 +26,9 @@ const Image = styled.img`
 
 const Title = styled.span`
   font-size: 70px;
+  @media only screen and (max-width: 480px) {
+   font-size: 20px;
+ }
   
 `;
 const SubTitle = styled.span`
@@ -32,6 +42,7 @@ const Desc = styled.p`
  font-size: 20px;
  color:#777;
  margin-top: 30px;
+ 
 `;
 const Button = styled.button`
    width:150px;
@@ -51,6 +62,9 @@ const Right = styled.div`
    display:flex;
    flex-direction: column;
    justify-content: center;
+   @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
 `;
 
 const Feature = () => {
@@ -63,7 +77,6 @@ const Feature = () => {
                    <b>great Wears  For Women and Children</b>
                </Title>
                <SubTitle> We Know you love it just the way we make it</SubTitle>
-                 <Desc>We don't just make clothes that slay, we make you smile when you dress up</Desc>
                  <Desc>We don't just make clothes that slay, we make you smile when you dress up</Desc>
                <Button> Learn More</Button>
            </Right>
