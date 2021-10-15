@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Log from "../images/logo.jpg";
 import Toggle from "./Toggle";
+import {Link}  from "react-scroll";
+
 
 
 const Container = styled.div`
@@ -54,7 +56,9 @@ const Button = styled.button`
     cursor:pointer;
 `;
 
+
 const Navbar = () => {
+   
     return (
          <Container>
              <Wrapper>
@@ -62,11 +66,11 @@ const Navbar = () => {
                  {/* <Logo> Awesome styles</Logo> */}
                  <Image src ={Log}/>
                  <Menu>
-                     <MenuItem>Home</MenuItem>
-                     <MenuItem>About</MenuItem>
-                     <MenuItem>Designs</MenuItem>
-                     <MenuItem>Pricing</MenuItem>
-                     <MenuItem>Contact</MenuItem>
+                     <MenuItem >Home</MenuItem>
+                    <MenuItem ><Link to="feature" smooth={true} duration={1000}>About</Link></MenuItem>
+                     <MenuItem > <Link to="service" smooth={true} duration={1000}>Designs</Link></MenuItem>
+                     <MenuItem > <Link to="pricing" smooth={true} duration={1000}>Pricing</Link></MenuItem>
+                     <MenuItem> <Link to="contact" smooth={true} duration={1000}>Contact </Link></MenuItem>
                  </Menu>
                  </Left>
              </Wrapper>

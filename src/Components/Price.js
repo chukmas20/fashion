@@ -16,7 +16,7 @@ const Container = styled.div`
 
 const Price = () => {
     return (
-        <Container>
+        <Container id="pricing">
             <PriceCard price="6000" type="Ankara skirt and blouse"/>
             <PriceCard  price="8000" type="Lace skirt and blouse" />
             <PriceCard price="4000" type=" A shape gown" />

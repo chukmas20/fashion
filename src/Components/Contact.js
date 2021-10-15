@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {useRef, useState} from "react";
 import Map from "../images/map.png";
 import Phone from "../images/phone.png";
-import Send from "../images/send.png";
 import emailjs from 'emailjs-com';
 
 
@@ -182,7 +181,7 @@ const Contact = () => {
         });
     }
     return (
-        <Container>
+        <Container id="contact">
             <Wrapper>
                  <FormContainer>
                    <Done>{done &&  "Thank you for contacting us, we will reply soon"}</Done>
@@ -209,8 +208,11 @@ const Contact = () => {
                           <Text> +234 806 475 1014</Text>
                       </AddressItem>
                       <AddressItem>
-                          <Icon src={Send}/>
-                          <Text> coparaeke@yahoo.com</Text>
+                          <Text>
+                               <i class="fab fa-whatsapp" style={{margin:"20px", color:"green"}}></i>
+                               <i class="fab fa-facebook-square" style={{margin:"20px", color:"blue"}}></i>
+                               <i class="fab fa-instagram" style={{margin:"20px", color:"red"}}></i>
+                        </Text>
                       </AddressItem>
                  </AddressContainer>
             </Wrapper>

@@ -42,7 +42,6 @@ const Desc = styled.p`
  font-size: 20px;
  color:#777;
  margin-top: 30px;
- 
 `;
 const Button = styled.button`
    width:150px;
@@ -61,6 +60,7 @@ const Right = styled.div`
    width:50%;
    display:flex;
    flex-direction: column;
+   padding-bottom: 50px;
    justify-content: center;
    @media only screen and (max-width: 480px) {
       width: 100%;
@@ -69,7 +69,7 @@ const Right = styled.div`
 
 const Feature = () => {
     return (
-       <Container>
+       <Container id="feature">
            <Left><Image src ={Fashion}/></Left>
            <Right>
                <Title>
@@ -78,7 +78,7 @@ const Feature = () => {
                </Title>
                <SubTitle> We Know you love it just the way we make it</SubTitle>
                  <Desc>We don't just make clothes that slay, we make you smile when you dress up</Desc>
-               <Button> Learn More</Button>
+               {/* <Button> Learn More</Button> */}
            </Right>
            <AnimatedShapes />
        </Container>

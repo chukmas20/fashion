@@ -43,7 +43,7 @@ const Footer = () => {
          <Container>
               <Wrapper>
                    <List>
-                       <ListItem>Your fashion guide</ListItem>
+                       <ListItem>onixz</ListItem>
                    </List>
                    <CopyRight>  &copy; fashion 2021</CopyRight>
               </Wrapper>

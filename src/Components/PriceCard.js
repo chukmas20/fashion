@@ -74,7 +74,7 @@ const PriceCard = ({price, type}) => {
                 <List>
                     <Type> {type} </Type>
                 </List>
-                <Button> Book Now </Button>
+                <Button> Price </Button>
        </Container>
     )
 }

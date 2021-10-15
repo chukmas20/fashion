@@ -8,6 +8,7 @@ import Price from './Components/Price';
 import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 import ScrollToTop from './Components/ScrollToTop';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const Container = styled.div`
     height: 100vh;
@@ -59,14 +60,14 @@ function App() {
 
   const smallScreen = window.screen.width <= 480 ? true : false;
   return ( 
-       < >
+       <>
         <Container > 
            <Navbar />
            <Intro />
            <IntroShape />
         </Container>
         <Container >
-          <Feature />
+          <Feature  />
           <FeatureShape />
         </Container> 
         <Container  >

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import tailor from "../images/tailor.jpg";
 import AnimatedShapes from "./AnimatedShapes";
+import {Link} from "react-scroll";
 
 
 const Container = styled.div`
@@ -109,7 +110,7 @@ const Intro = () => {
                 <Title> We Create The best styles</Title>
                 <Desc> Having your clothes in our care will be the best decision you made. Come lets make it happen</Desc>
                 <Info>
-                    <Button> Start a project</Button>
+                    <Button><Link to="contact" smooth={true} duration={1000}> Contact us </Link></Button>
                     <Contact>
                          <Phone> Call Us on +234 806 475 1014</Phone>
                          <ContactText> for any equiries </ContactText>
