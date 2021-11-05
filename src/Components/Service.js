@@ -3,7 +3,7 @@ import {useState} from "react";
 import Fashion from "../images/fashion5.jpeg";
 import MiniCard from "./MiniCard";
 import Play from "../images/play.png";
-import Player from "../images/video2.mp4";
+import Player from "../images/video1.mp4";
 
 const Conatiner =  styled.div`
   display:flex;
