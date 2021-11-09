@@ -209,9 +209,13 @@ const Contact = () => {
                       </AddressItem>
                       <AddressItem>
                           <Text>
-                               <i class="fab fa-whatsapp" style={{margin:"20px", color:"green"}}></i>
-                               <i class="fab fa-facebook-square" style={{margin:"20px", color:"blue"}}></i>
-                               <i class="fab fa-instagram" style={{margin:"20px", color:"red"}}></i>
+                                  <a href="https://www.instagram.com/creamydelacream4/" target="_blank">
+                                     <i class="fab fa-instagram" style={{margin:"20px", color:"red"}}> </i>
+                                   </a>
+                               <i class="fab fa-whatsapp" style={{margin:"20px", color:"green"}}>
+                               </i>
+                               <i class="fab fa-facebook-square" style={{margin:"20px", color:"blue"}}>
+                               </i>                  
                         </Text>
                       </AddressItem>
                  </AddressContainer>
